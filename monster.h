@@ -18,4 +18,16 @@ public:
 };
 
 
+monster::monster(){
+    cout<<"Bye Bye" << name <<" hp : "<<hp<<endl ;
+}
+
+monster::monster(string n, int b, int p){
+    name=n;
+    b>200? hp=200:hp=b;
+    p>10? potion=10:pption=p;
+
+    cout<<"Monster" << name <<" Let's go mon mon" <<endl;
+}
+
 #endif /* monster_h */
